@@ -157,6 +157,8 @@ printf "\e[1;77m[\e[0m\e[1;31m+\e[0m\e[1;77m] Saved:\e[0m\e[1;93m %s/videos/\e[0
 
 }
 
+sleep 300
+
 increase_followers() {
 
 printf "\n"
@@ -168,6 +170,8 @@ sleep 5
 sleep 300
 
 username_id=$(curl -L -s 'https://www.instagram.com/'$user'' > getid && grep -o  'profilePage_[0-9]*.' getid | cut -d "_" -f2 | tr -d '"')
+
+sleep 300
 
 selena="460563723"
 
